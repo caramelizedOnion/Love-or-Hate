@@ -12,7 +12,7 @@ function hideButtons() {
 title.remove();
 
 loveBtn.onclick = function() {
-    messageDiv.innerHTML = 'Yay, Happy birthday NANA! 🎉<br>I know you loved me 💖';
+    messageDiv.innerHTML = 'Yay, Happy birthday NANA! 🎉🎂🎈<br>Enjoy your candy! 🍬🍭';
     messageDiv.style.color = '#e75480';
     clearInterval(emojiInterval);
     emojiInterval = setInterval(spawnEmoji, 300);
@@ -31,7 +31,7 @@ hateBtn.onclick = function() {
 };
 
 function spawnEmoji() {
-    const emojis = ['🎉','🎂','🥳','💖','😊','💕','🍰','🎈','😄','😻'];
+    const emojis = ['🎉','🎂','🥳','💖','😊','💕','🍰','🎈','😄','😻','🍬','🍭'];
     const emoji = document.createElement('div');
     emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
     emoji.style.position = 'fixed';
